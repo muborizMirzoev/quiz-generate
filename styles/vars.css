@@ -1,0 +1,35 @@
+:root {
+    --text-color: #333333;
+    --border-color: #eeeeee;
+    --main-bg-color: #fff;
+
+    --active-elem-bg: #f8ab47;
+    --active-elem-color: #fff;
+
+    --btn-color: #fff;
+    --btn-bg-color: #51a06c;
+    --btn-bg-color-hover: #67b689;
+
+    --quiz-corect-variant: #060;
+    --quiz-incorect-variant: #d90000;
+    --quiz-incorect-variant-border: #eaaaad;
+    --quiz-corect-variant-border: #bbd4a5;
+}
+
+/* A class added to the <html> element*/
+.dark-mode {
+    /*--text-color: #333333;*/
+    /*--border-color: #eeeeee;*/
+    /*--main-bg-color: #fff;*/
+
+    /*--active-elem-bg: #f8ab47;*/
+    /*--active-elem-color: #fff;*/
+
+    /*--btn-color: #fff;*/
+    /*--btn-bg-color: #51a06c;*/
+
+    /*--quiz-corect-variant: #060;*/
+    /*--quiz-incorect-variant: #d90000;*/
+    /*--quiz-incorect-variant-border: #eaaaad;*/
+    /*--quiz-corect-variant-border: #bbd4a5;*/
+}
