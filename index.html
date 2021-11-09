@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="index.js"></script>
   <title>Quiz</title>
 </head>
 <body>
@@ -19,61 +20,61 @@
 
 <main class="content">
   <div class="quiz">
-    <div class="quiz-topbar">
-      <span class="quiz-topbar__item quiz-topbar__item-current">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
-      <span class="quiz-topbar__item">1</span>
+    <div class="quiz-topbar" id="quiz-topbar">
+<!--      <span class="quiz-topbar__item quiz-topbar__item-current">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
+<!--      <span class="quiz-topbar__item">1</span>-->
     </div>
     <form action="#">
       <div class="quiz-question">
-        <div class="quiz-question__body quiz-question-body">
-          <p class="quiz-question-body__title">Что получится, если сложить true + false?</p>
-          <ul class="quiz-question__answers">
-            <li class="quiz-question__answer">
-              <label class="quiz-question__label">
-                <input class="quiz-question__input" type="radio" name="answer" value="1">
-                <span class="quiz-question__input-text">ss</span>
-              </label>
-            </li>
-            <li class="quiz-question__answer">
-              <label class="quiz-question__label">
-                <input class="quiz-question__input" type="radio" name="answer" value="1">
-                <span class="quiz-question__input-text">ss</span>
-              </label>
-            </li>
-            <li class="quiz-question__answer">
-              <label class="quiz-question__label">
-                <input class="quiz-question__input" type="radio" name="answer" value="1">
-                <span class="quiz-question__input-text">ss</span>
-              </label>
-            </li>
-            <li class="quiz-question__answer">
-              <label class="quiz-question__label">
-                <input class="quiz-question__input" type="radio" name="answer" value="1">
-                <span class="quiz-question__input-text">ss</span>
-              </label>
-            </li>
-          </ul>
+        <div class="quiz-question__body quiz-question-body" id="quiz-body">
+<!--          <p class="quiz-question-body__title">Что получится, если сложить true + false?</p>-->
+<!--          <ul class="quiz-question__answers">-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label">-->
+<!--                <input class="quiz-question__input" type="radio" name="answer" value="1">-->
+<!--                <span class="quiz-question__input-text">ss</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label">-->
+<!--                <input class="quiz-question__input" type="radio" name="answer" value="1">-->
+<!--                <span class="quiz-question__input-text">ss</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label">-->
+<!--                <input class="quiz-question__input" type="radio" name="answer" value="1">-->
+<!--                <span class="quiz-question__input-text">ss</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label">-->
+<!--                <input class="quiz-question__input" type="radio" name="answer" value="1">-->
+<!--                <span class="quiz-question__input-text">ss</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--          </ul>-->
         </div>
         <div class="quiz-question__submit">
-          <button class="button" type="submit" disabled>Продолжить</button>
+          <button class="button" id="nextBtn" type="submit" disabled>Продолжить</button>
         </div>
       </div>
     </form>

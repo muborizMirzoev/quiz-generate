@@ -100,5 +100,75 @@ export const data = [
             status: true
          }
       ]
-   }
+   },
+   {
+      question: '7',
+      answer: [
+         {
+            value: 'Просто строка',
+            status: false
+         },
+         {
+            value: 'Функция.',
+            status: false
+         },
+         {
+            value: 'Строгий режим.',
+            status: true
+         }
+      ]
+   },
+   {
+      question: '8',
+      answer: [
+         {
+            value: 'Просто строка',
+            status: false
+         },
+         {
+            value: 'Функция.',
+            status: false
+         },
+         {
+            value: 'Строгий режим.',
+            status: true
+         }
+      ]
+   },
+   {
+      question: '9',
+      answer: [
+         {
+            value: 'Просто строка',
+            status: false
+         },
+         {
+            value: 'Функция.',
+            status: false
+         },
+         {
+            value: 'Строгий режим.',
+            status: true
+         }
+      ]
+   },
+   {
+      question: '10',
+      answer: [
+         {
+            value: 'Просто строка',
+            status: false
+         },
+         {
+            value: 'Функция.',
+            status: false
+         },
+         {
+            value: 'Строгий режим.',
+            status: true
+         }
+      ]
+   },
+
+
 ];
