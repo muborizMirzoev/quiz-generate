@@ -1,6 +1,5 @@
 import {$} from './helper.js'
 
-
 export default class TopBar {
    constructor(options) {
       this.$el = options.el;

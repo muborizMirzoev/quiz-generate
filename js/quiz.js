@@ -10,7 +10,6 @@ export default class Quiz {
 
       this.topBar = new TopBar({el: options.topBarEl, data: this.data,});
 
-
       this.shuffle(this.data);
       this.init();
       this.checkAnswer();

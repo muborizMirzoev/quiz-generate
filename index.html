@@ -20,64 +20,120 @@
 
 <main class="content">
   <div class="quiz">
-    <div class="quiz-topbar" id="quiz-topbar">
-<!--      <span class="quiz-topbar__item quiz-topbar__item-current">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-<!--      <span class="quiz-topbar__item">1</span>-->
-    </div>
+    <div class="quiz-topbar" id="quiz-topbar"></div>
     <form action="#" id="quiz-form" onsubmit="event.preventDefault()">
       <div class="quiz-question">
         <div class="quiz-question__body quiz-question-body" id="quiz-body">
-<!--          <p class="quiz-question-body__title">Что получится, если сложить true + false?</p>-->
-<!--          <ul class="quiz-question__answers">-->
-<!--            <li class="quiz-question__answer">-->
-<!--              <label class="quiz-question__label">-->
-<!--                <input class="quiz-question__input" type="radio" name="answer" value="1">-->
-<!--                <span class="quiz-question__input-text">ss</span>-->
-<!--              </label>-->
-<!--            </li>-->
-<!--            <li class="quiz-question__answer">-->
-<!--              <label class="quiz-question__label">-->
-<!--                <input class="quiz-question__input" type="radio" name="answer" value="1">-->
-<!--                <span class="quiz-question__input-text">ss</span>-->
-<!--              </label>-->
-<!--            </li>-->
-<!--            <li class="quiz-question__answer">-->
-<!--              <label class="quiz-question__label">-->
-<!--                <input class="quiz-question__input" type="radio" name="answer" value="1">-->
-<!--                <span class="quiz-question__input-text">ss</span>-->
-<!--              </label>-->
-<!--            </li>-->
-<!--            <li class="quiz-question__answer">-->
-<!--              <label class="quiz-question__label">-->
-<!--                <input class="quiz-question__input" type="radio" name="answer" value="1">-->
-<!--                <span class="quiz-question__input-text">ss</span>-->
-<!--              </label>-->
-<!--            </li>-->
-<!--          </ul>-->
         </div>
         <div class="quiz-question__submit">
           <button class="button" id="nextBtn" type="submit" disabled="disabled">Продолжить</button>
         </div>
       </div>
     </form>
+  </div>
+
+  <div class="quiz-result">
+    <div class="quiz-result__layout">
+      <div class="quiz-result__left">
+        <dl class="quiz-percents">
+          <dt class="quiz-percents__text">Ваш результат:</dt>
+          <dd class="quiz-percents__percents">30%</dd>
+        </dl>
+      </div>
+      <div class="quiz-result__center">
+        <div class="quiz-result-indicator">
+          <div class="quiz-result-indicator__indicator"></div>
+          <div class="quiz-result-indicator__text">
+            Ваш предположительный уровень — <span
+            class="quiz-result-indicator__level quiz-result-indicator__level-junior">Новичок</span>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-result__right">
+        <dl class="quiz-percents">
+          <dt class="quiz-percents__text">Вы прошли тест лучше, чем</dt>
+          <dd>
+            <p class="quiz-percents__percents">12%</p>
+            <p class="quiz-percents__text">респондентов</p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="quiz-result__buttons ">
+      <form action="#" class="quiz-result__retry-form">
+        <button type="submit" class="quiz-result-button quiz-result__retry-button">Пройти заново</button>
+      </form>
+      <form action="#" class="quiz-result__save-form">
+        <button type="submit" class="quiz-result-button quiz-result__save-button">Опубликовать результат в профиле
+        </button>
+      </form>
+
+    </div>
+  </div>
+  <div class="quiz-question ">
+    <div class="quiz-question__body quiz-question-body quiz-question__correct">
+      <p class="quiz-question-body__title">Какая арифметическая операция приводит к ошибке в javascript?</p>
+      <ul class="quiz-question__answers">
+        <li class="quiz-question__answer">
+          <label class="quiz-question__label quiz-answer-correct">
+            <input class="quiz-question__input"
+                   checked="checked"
+                   disabled="disabled"
+                   type="radio" name="answer-${this.currentQuiz}1"
+                   value="${answer.value}1"
+                   data-answer="${answer.status}">
+            <span class="quiz-question__input-text">Деление на ноль.</span>
+          </label>
+        </li>
+        <li class="quiz-question__answer">
+          <label class="quiz-question__label">
+            <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}1" value="${answer.value}1"
+                   data-answer="${answer.status}">
+            <span class="quiz-question__input-text">Никакая из вышеперечисленных.</span>
+          </label>
+        </li>
+        <li class="quiz-question__answer">
+          <label class="quiz-question__label">
+            <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}1" value="${answer.value}1"
+                   data-answer="${answer.status}">
+            <span class="quiz-question__input-text">${answer.value}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="quiz-question">
+    <div class="quiz-question__body quiz-question-body quiz-question__incorrect">
+      <p class="quiz-question-body__title">${current.question}</p>
+      <ul class="quiz-question__answers">
+        <li class="quiz-question__answer">
+          <label class="quiz-question__label quiz-answer-incorrect">
+            <input class="quiz-question__input "
+                   type="radio"
+                   checked
+                   disabled="disabled"
+                   name="answer-${this.currentQuiz}"
+                   value="${answer.value}"
+                   data-answer="${answer.status}">
+            <span class="quiz-question__input-text">${answer.value}</span>
+          </label>
+        </li>
+        <li class="quiz-question__answer">
+          <label class="quiz-question__label quiz-answer-correct">
+            <input class="quiz-question__input" type="radio" disabled="disabled" name="answer-${this.currentQuiz}" value="${answer.value}"
+                   data-answer="${answer.status}">
+            <span class="quiz-question__input-text">${answer.value}</span>
+          </label>
+        </li>
+        <li class="quiz-question__answer">
+          <label class="quiz-question__label">
+            <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}" value="${answer.value}"
+                   data-answer="${answer.status}">
+            <span class="quiz-question__input-text">${answer.value}</span>
+          </label>
+        </li>
+      </ul>
+    </div>
   </div>
 </main>
 </body>
