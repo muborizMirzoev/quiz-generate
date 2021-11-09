@@ -10,13 +10,18 @@ export default class Quiz {
 
       this.topBar = new TopBar({el: options.topBarEl, data: this.data,});
 
+
       this.shuffle(this.data);
-      this.init()
+      this.init();
+      this.checkAnswer();
+      this.nextQuiz();
    }
 
    init() {
-      if(this.data.length < this.currentQuiz) return;
+      if (this.data.length <= this.currentQuiz) return;
+      this.topBar.checkCurrent(this.currentQuiz);
 
+      $(this.$el).innerHTML = ''
       const current = this.data[this.currentQuiz]
       const question = `<p class="quiz-question-body__title">${current.question}</p>`;
 
@@ -39,5 +44,25 @@ export default class Quiz {
 
    shuffle(array) {
       array.sort(() => Math.random() - 0.5)
+   }
+
+   checkAnswer() {
+      document.querySelectorAll('.quiz-question__input').forEach(input => {
+         input.addEventListener('change', (e) => {
+            $(this.nextBtn).disabled = false;
+         })
+      })
+   }
+
+   nextQuiz() {
+      $(this.nextBtn).addEventListener('click', () => {
+         this.currentQuiz++;
+         if (this.currentQuiz >= this.data.length) {
+            console.log('finish', this.currentQuiz, this.data.length)
+         } else {
+            this.init();
+         }
+      });
+
    }
 }

@@ -11,10 +11,17 @@ export default class TopBar {
 
    init() {
       const spans = this.data.map((_, index) => {
-         return `<span class="quiz-topbar__item ${index === 0 ? 'quiz-topbar__item-current': ''}">${index +1}</span>`
+         return `<span class="quiz-topbar__item">${index +1}</span>`
       }).join('');
 
       $(this.$el).innerHTML += spans;
+   }
+
+   checkCurrent(current) {
+      $(this.$el).children[current].classList.add('quiz-topbar__item-current');
+      if (current === 0) return;
+      $(this.$el).children[current - 1].classList.add('quiz-topbar__item-past');
+      $(this.$el).children[current - 1].classList.remove('quiz-topbar__item-current');
    }
 
 }

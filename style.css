@@ -69,7 +69,7 @@ body {
     border-radius: 50%;
 }
 
-.quiz-topbar__item-active {
+.quiz-topbar__item-past {
     color: var(--active-elem-bg);
 }
 
@@ -96,6 +96,10 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.quiz-question__input:checked + .quiz-question__input-text {
+    font-weight: bold;
 }
 
 .quiz-question__input {
