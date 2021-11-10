@@ -66,16 +66,14 @@ export default class Quiz {
    }
 
    nextQuiz() {
-
       $(this.nextBtn).addEventListener('click', () => {
-
          this.currentQuiz++;
          if (this.currentQuiz >= this.data.length) {
             $('.quiz').classList.add('hidden');
             $('.result').classList.remove('hidden');
-            new Indicator({el: '#quiz-result__layout', answers: this.answers})
+            new Indicator({el: '#quiz-result__layout', answers: this.answers});
+            new ResultQuestions({el: '.result__quiz', answers: this.answers, data: this.data})
          } else {
-
             this.init();
          }
       });

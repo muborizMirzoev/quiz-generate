@@ -4,6 +4,7 @@ export default class Indicator {
    constructor(options) {
       this.$el = options.el;
       this.answers = options.answers;
+
       this.percent = 0;
       this.levelDegree = 0;
       this.level = null;
@@ -47,7 +48,6 @@ export default class Indicator {
           </dl>
         </div>
       `
-
    }
 
    findPercent() {
@@ -60,7 +60,6 @@ export default class Indicator {
       const totalDegree = 180;
       this.levelDegree = Math.floor((this.percent * totalDegree) / 100);
 
-
       if (this.levelDegree <= 40) {
          this.level = 'Новичок'
          this.levelClass = 'quiz-result-indicator__level-junior';
@@ -71,7 +70,6 @@ export default class Indicator {
          this.level = 'Профи'
          this.levelClass = 'quiz-result-indicator__level-senior'
       }
-
    }
 
    findPercentTopPeople() {

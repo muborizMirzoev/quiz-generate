@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="index.js"></script>
+  <script type="module" src="./index.js"></script>
   <title>Quiz</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
     </form>
   </div>
 
-  <section class="result hidden">
+  <section class="result ">
     <div class="quiz-result">
       <div class="quiz-result__layout" id="quiz-result__layout">
       </div>
@@ -44,74 +44,75 @@
           <button type="submit" class="quiz-result-button quiz-result__save-button">Опубликовать результат в профиле
           </button>
         </form>
-
       </div>
     </div>
-    <div class="quiz-question ">
-      <div class="quiz-question__body quiz-question-body quiz-question__correct">
-        <p class="quiz-question-body__title">Какая арифметическая операция приводит к ошибке в javascript?</p>
-        <ul class="quiz-question__answers">
-          <li class="quiz-question__answer">
-            <label class="quiz-question__label quiz-answer-correct">
-              <input class="quiz-question__input"
-                     checked="checked"
-                     disabled="disabled"
-                     type="radio" name="answer-${this.currentQuiz}1"
-                     value="${answer.value}1"
-                     data-answer="${answer.status}">
-              <span class="quiz-question__input-text">Деление на ноль.</span>
-            </label>
-          </li>
-          <li class="quiz-question__answer">
-            <label class="quiz-question__label">
-              <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}1" value="${answer.value}1"
-                     data-answer="${answer.status}">
-              <span class="quiz-question__input-text">Никакая из вышеперечисленных.</span>
-            </label>
-          </li>
-          <li class="quiz-question__answer">
-            <label class="quiz-question__label">
-              <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}1" value="${answer.value}1"
-                     data-answer="${answer.status}">
-              <span class="quiz-question__input-text">${answer.value}</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="quiz-question">
-      <div class="quiz-question__body quiz-question-body quiz-question__incorrect">
-        <p class="quiz-question-body__title">${current.question}</p>
-        <ul class="quiz-question__answers">
-          <li class="quiz-question__answer">
-            <label class="quiz-question__label quiz-answer-incorrect">
-              <input class="quiz-question__input "
-                     type="radio"
-                     checked
-                     disabled="disabled"
-                     name="answer-${this.currentQuiz}"
-                     value="${answer.value}"
-                     data-answer="${answer.status}">
-              <span class="quiz-question__input-text">${answer.value}</span>
-            </label>
-          </li>
-          <li class="quiz-question__answer">
-            <label class="quiz-question__label quiz-answer-correct">
-              <input class="quiz-question__input" type="radio" disabled="disabled" name="answer-${this.currentQuiz}" value="${answer.value}"
-                     data-answer="${answer.status}">
-              <span class="quiz-question__input-text">${answer.value}</span>
-            </label>
-          </li>
-          <li class="quiz-question__answer">
-            <label class="quiz-question__label">
-              <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}" value="${answer.value}"
-                     data-answer="${answer.status}">
-              <span class="quiz-question__input-text">${answer.value}</span>
-            </label>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div class="result__quiz">
+<!--      <div class="quiz-question ">-->
+<!--        <div class="quiz-question__body quiz-question-body quiz-question__correct">-->
+<!--          <p class="quiz-question-body__title">Какая арифметическая операция приводит к ошибке в javascript?</p>-->
+<!--          <ul class="quiz-question__answers">-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label quiz-answer-correct">-->
+<!--                <input class="quiz-question__input"-->
+<!--                       checked="checked"-->
+<!--                       disabled="disabled"-->
+<!--                       type="radio" name="answer-${this.currentQuiz}1"-->
+<!--                       value="${answer.value}1"-->
+<!--                       data-answer="${answer.status}">-->
+<!--                <span class="quiz-question__input-text">Деление на ноль.</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label">-->
+<!--                <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}1" value="${answer.value}1"-->
+<!--                       data-answer="${answer.status}">-->
+<!--                <span class="quiz-question__input-text">Никакая из вышеперечисленных.</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label">-->
+<!--                <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}1" value="${answer.value}1"-->
+<!--                       data-answer="${answer.status}">-->
+<!--                <span class="quiz-question__input-text">${answer.value}</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="quiz-question">-->
+<!--        <div class="quiz-question__body quiz-question-body quiz-question__incorrect">-->
+<!--          <p class="quiz-question-body__title">${current.question}</p>-->
+<!--          <ul class="quiz-question__answers">-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label quiz-answer-incorrect">-->
+<!--                <input class="quiz-question__input "-->
+<!--                       type="radio"-->
+<!--                       checked-->
+<!--                       disabled="disabled"-->
+<!--                       name="answer-${this.currentQuiz}"-->
+<!--                       value="${answer.value}"-->
+<!--                       data-answer="${answer.status}">-->
+<!--                <span class="quiz-question__input-text">${answer.value}</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label quiz-answer-correct">-->
+<!--                <input class="quiz-question__input" type="radio" disabled="disabled" name="answer-${this.currentQuiz}" value="${answer.value}"-->
+<!--                       data-answer="${answer.status}">-->
+<!--                <span class="quiz-question__input-text">${answer.value}</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--            <li class="quiz-question__answer">-->
+<!--              <label class="quiz-question__label">-->
+<!--                <input class="quiz-question__input" disabled="disabled" type="radio" name="answer-${this.currentQuiz}" value="${answer.value}"-->
+<!--                       data-answer="${answer.status}">-->
+<!--                <span class="quiz-question__input-text">${answer.value}</span>-->
+<!--              </label>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
   </section>
 
 </main>
