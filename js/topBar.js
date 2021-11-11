@@ -11,7 +11,7 @@ export default class TopBar {
 
    init() {
       const spans = this.data.map((_, index) => {
-         return `<span class="quiz-topbar__item">${index +1}</span>`
+         return `<span class="quiz-topbar__item">${index + 1}</span>`
       }).join('');
 
       $(this.$el).innerHTML += spans;
@@ -25,7 +25,7 @@ export default class TopBar {
       $(this.$el).children[current - 1].classList.remove('quiz-topbar__item-current');
 
       //render tablet topBar
-      $(this.$tabletCurrentEl).innerText = current+1;
+      $(this.$tabletCurrentEl).innerText = current + 1;
    }
 
 }

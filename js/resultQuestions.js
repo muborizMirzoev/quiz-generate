@@ -37,9 +37,9 @@ export default class ResultQuestions {
          }).join('');
 
          return `
-         <div class="quiz-question__body quiz-question-body ${userCorrect === 'true' ? 'quiz-question__correct' : 'quiz-question__incorrect'}">
+         <div class="result__question quiz-question-body ${userCorrect === 'true' ? 'quiz-question__correct' : 'quiz-question__incorrect'}">
             <p class="quiz-question-body__title">${question.question}</p>
-            <ul class="quiz-question__answers">
+            <ul class="quiz-question__answer">
               ${answers}
              </ul>
           </div>`

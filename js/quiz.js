@@ -11,7 +11,6 @@ export default class Quiz {
       this.currentQuiz = 0;
       this.answers = {};
 
-
       this.topBar = new TopBar({el: options.topBarEl, data: this.data, tabletCurrentEl: '.quiz-topbar-tablet__current'});
 
       this.shuffle(this.data);
