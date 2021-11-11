@@ -1,212 +1,268 @@
 export const data = [
    {
       id: 1,
-      question: 'JavaScript это тоже самое что и Java?',
+      question: 'Чему равна сумма [] + 1 + 2?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: '1.',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'NaN.',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
+            value: 'undefined',
             status: false,
             id: 3
+         },
+         {
+            value: '12',
+            status: true,
+            id: 4
+         },
+         {
+            value: 'Другое.',
+            status: false,
+            id: 5
          }
       ]
    },
    {
       id: 2,
-      question: 'Сколько параметров можно передавать в функцию?',
+      question: 'Что такое ECMAScript?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: 'Новый язык программирования.',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'Переработанная реализация Javascript.',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
-            status: false,
+            value: 'Спецификация языка Javascript.',
+            status: true,
             id: 3
          }
       ]
    },
    {
       id: 3,
-      question: 'Что такое: "use strict"?',
+      question: 'Чему равна сумма 1.15 + 2.30 с точки зрения JavaScript?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: '345',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: '3.45',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
+            value: '3,45',
             status: false,
             id: 3
+         },
+         {
+            value: 'Ни один из вариантов выше.',
+            status: true,
+            id: 4
          }
       ]
    },
    {
       id: 4,
-      question: '4',
+      question: 'Где верно указан вывод данных?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: 'print(Hello)',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'prompt("Hello")',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
+            value: 'write("Hello")',
             status: false,
             id: 3
+         },
+         {
+            value: 'console.log("Hello")',
+            status: true,
+            id: 4
          }
       ]
    },
    {
       id: 5,
-      question: '5',
+      question: 'Где верно указан запуск всплывающего окна?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: 'new alert ("Hi")',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'info ("Hi")',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
+            value: 'Нет верных вариантов',
             status: false,
             id: 3
+         },
+         {
+            value: 'alert ("Hi")',
+            status: true,
+            id: 4
          }
       ]
    },
    {
       id: 6,
-      question: '6',
+      question: 'Какие циклы есть в языке JavaScript?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: 'for, forMap, foreach, while',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'for, forMap, foreach, while, do while',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
+            value: 'for, while, do while, foreach',
             status: false,
             id: 3
+         },
+         {
+            value: 'for, while, do while',
+            status: true,
+            id: 4
          }
       ]
    },
    {
       id: 7,
-      question: '7',
+      question: 'Что такое условный оператор?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: 'Конструкция, что выполняет код несколько раз',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'Конструкция для создания определенной переменной',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
-            status: false,
+            value: 'Оператор сравнения значений',
+            status: true,
             id: 3
          }
       ]
    },
    {
       id: 8,
-      question: '8',
+      question: 'Какая переменная записана неверно?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: 'var num = "STRING";',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'var isDone = 0;',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
+            value: 'var b = false;',
             status: false,
             id: 3
+         },
+         {
+            value: 'var number = 12,5;',
+            status: true,
+            id: 4
          }
       ]
    },
    {
       id: 9,
-      question: '9',
+      question: 'В чем отличие между локальной и глобальной переменной?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: 'Отличий нет',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'Локальные видны повсюду, глобальные только в функциях',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
+            value: 'Глобальные можно переопределять, локальные нельзя',
             status: false,
             id: 3
+         },
+         {
+            value: 'Локальные можно переопределять, глобальные нельзя',
+            status: false,
+            id: 4
+         },
+         {
+            value: 'Глобальные видны повсюду, локальные только в функциях',
+            status: true,
+            id: 5
          }
       ]
    },
    {
       id: 10,
-      question: '10',
+      question: 'Где можно использовать JavaScript?',
       answer: [
          {
-            value: 'Нет.',
-            status: true,
+            value: 'Мобильные приложения',
+            status: false,
             id: 1
          },
          {
-            value: 'Да.',
+            value: 'Веб-приложения',
             status: false,
             id: 2
          },
          {
-            value: 'Когда как.',
+            value: 'Серверные приложения',
             status: false,
             id: 3
+         },
+         {
+            value: 'Прикладное программное обеспечение',
+            status: false,
+            id: 4
+         },
+         {
+            value: 'Можно во всех перечисленных',
+            status: true,
+            id: 5
          }
       ]
    },
+
 ];

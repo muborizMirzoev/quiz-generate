@@ -12,7 +12,7 @@ export default class Quiz {
       this.answers = {};
 
 
-      this.topBar = new TopBar({el: options.topBarEl, data: this.data,});
+      this.topBar = new TopBar({el: options.topBarEl, data: this.data, tabletCurrentEl: '.quiz-topbar-tablet__current'});
 
       this.shuffle(this.data);
       this.init();
@@ -77,6 +77,5 @@ export default class Quiz {
             this.init();
          }
       });
-
    }
 }
