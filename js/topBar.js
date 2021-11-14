@@ -10,6 +10,8 @@ export default class TopBar {
    }
 
    init() {
+      $('.quiz-topbar-tablet__length').innerText = this.data.length;
+
       const spans = this.data.map((_, index) => {
          return `<span class="quiz-topbar__item">${index + 1}</span>`
       }).join('');
